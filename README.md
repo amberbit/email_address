@@ -12,10 +12,11 @@ clients do not stick to the rules or have bugs allowing for invalid e-mail addre
 be used when sending, receiving or processing e-mails.
 
 This library defines e-mail address as a string, which contains what most people think as
-e-mail address, i.e. "jack.black@example.com" and additional information, such as first or
-last name of the person: "Jack Black <jack.black@example.com>". When parsing, we support
-various formats encountered in the wild:
+sender name + e-mail address.
 
+When parsing, we support various formats encountered in the wild:
+
+```
 - jack.black@example.com
 - Jack Black <jack.black@example.com>
 - "Jack@Black" <jack.black@example.com>
@@ -23,8 +24,7 @@ various formats encountered in the wild:
 - Jack\n\rBlack\tjack.black@example.com
 - jack.black@example.com (Jack Black)
 - Jack Black <jack.black@127.0.0.1>
-
-etc.
+```
 
 ## Installation
 
@@ -39,9 +39,8 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/email_address](https://hexdocs.pm/email_address).
+Documentation can be can be found at
+[https://hexdocs.pm/email_address](https://hexdocs.pm/email_address).
 
 ## Usage
 

@@ -1,10 +1,12 @@
 defmodule EmailAddress.MixProject do
   use Mix.Project
 
+
+  @version "1.0.1"
   def project do
     [
       app: :email_address,
-      version: "1.0.0",
+      version: @version,
       elixir: "~> 1.9",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
@@ -12,7 +14,8 @@ defmodule EmailAddress.MixProject do
       xref: [exclude: [:xmerl]],
       description: """
       Zero-dependency, forgiving, e-mail address parser and formatter library for Elixir 
-      """
+      """,
+      docs: docs()
     ]
   end
 
@@ -39,6 +42,15 @@ defmodule EmailAddress.MixProject do
       files:
         ~w(lib) ++
           ~w(CHANGELOG.md LICENSE.md mix.exs README.md .formatter.exs)
+    ]
+  end
+
+  defp docs do
+    [
+      source_ref: "v#{@version}",
+      main: "README",
+      formatters: ["html", "epub"],
+      extras: ["README.md", "CHANGELOG.md"]
     ]
   end
 end
