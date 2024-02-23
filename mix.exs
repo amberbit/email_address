@@ -9,7 +9,10 @@ defmodule EmailAddress.MixProject do
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       package: package(),
-      xref: [exclude: [:xmerl]]
+      xref: [exclude: [:xmerl]],
+      description: """
+      Zero-dependency, forgiving, e-mail address parser and formatter library for Elixir 
+      """
     ]
   end
 
