@@ -48,9 +48,9 @@ defmodule EmailAddress.MixProject do
   defp docs do
     [
       source_ref: "v#{@version}",
-      main: "README",
       formatters: ["html", "epub"],
-      extras: ["README.md", "CHANGELOG.md"]
+      main: "readme",
+      extras: ["README.md", "CHANGELOG.md", "LICENSE.md"]
     ]
   end
 end
