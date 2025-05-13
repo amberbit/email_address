@@ -1,5 +1,7 @@
 # EmailAddress
 
+## NOTE: The low activity on this repo doesn't mean it's abandoned. This code runs in production and parses thousands unique email addresses per day. It's just small and feature-complete. Bugs and improvements will come, but this will never be updated daily or even weekly.
+
 EmailAddress provides top-level parsing & formatting API to deal with RFC5322-formatted
 e-mail addresses.
 
